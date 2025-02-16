@@ -12,4 +12,8 @@ public class Song
         this.artist = artist;
         this.length = length;
     }
+
+    public String toString(){
+        return String.format("songName: %s, artist: %s, length: %s", title, artist, length);
+    }
 }
