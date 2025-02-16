@@ -1,4 +1,4 @@
-package org.example;
+package com.jakeberryman;
 
 public class SNList {
     private static class SLNode {

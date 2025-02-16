@@ -1,4 +1,4 @@
-package org.example;
+package com.jakeberryman;
 
 public class Song
 {
