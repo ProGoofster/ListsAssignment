@@ -1,6 +1,8 @@
 package com.jakeberryman.generics;
 
-public class SNList<T> {
+import com.jakeberryman.DataStructure;
+
+public class SNList<T> implements DataStructure<T> {
     private static class SLNode<T> {
         public T data;
         public SLNode<T> next;

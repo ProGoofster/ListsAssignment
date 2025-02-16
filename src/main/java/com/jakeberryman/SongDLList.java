@@ -1,6 +1,6 @@
 package com.jakeberryman;
 
-public class DLList {
+public class SongDLList implements DataStructure<Song> {
     private static class DLNode {
         public Song song;
         public DLNode next;
@@ -21,7 +21,7 @@ public class DLList {
     private DLNode tail;
     private int size;
 
-    public DLList() {
+    public SongDLList() {
         this.head = null;
         this.tail = null;
         this.size = 0;

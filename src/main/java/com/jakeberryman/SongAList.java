@@ -2,11 +2,11 @@ package com.jakeberryman;
 
 import java.util.Arrays;
 
-public class AList {
+public class SongAList implements DataStructure<Song> {
     private Song[] songs;
     private int size;
 
-    public AList() {
+    public SongAList() {
         songs = new Song[0];
         size = 0;
     }
@@ -37,6 +37,10 @@ public class AList {
     }
 
     public String toString(){
-        return Arrays.toString(songs);
+        StringBuilder sb = new StringBuilder();
+        for (Song song : songs) {
+            sb.append(song.toString()).append("\n");
+        }
+        return sb.toString();
     }
 }

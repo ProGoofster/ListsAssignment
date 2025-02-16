@@ -14,6 +14,6 @@ public class Song
     }
 
     public String toString(){
-        return String.format("songName: %s, artist: %s, length: %s", title, artist, length);
+        return String.format("{ songName: %s, artist: %s, length: %s }", title, artist, length);
     }
 }

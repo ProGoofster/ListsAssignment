@@ -1,6 +1,8 @@
 package com.jakeberryman.generics;
 
-public class DLList<T> {
+import com.jakeberryman.DataStructure;
+
+public class DLList<T> implements DataStructure<T> {
     private static class DLNode<T> {
         public T data;
         public DLNode<T> next;

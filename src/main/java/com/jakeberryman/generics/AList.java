@@ -1,8 +1,11 @@
 package com.jakeberryman.generics;
 
+import com.jakeberryman.DataStructure;
+import com.jakeberryman.Song;
+
 import java.util.Arrays;
 
-public class AList<T> {
+public class AList<T> implements DataStructure<T> {
     private T[] arr;
     private int size;
 
@@ -37,6 +40,10 @@ public class AList<T> {
     }
 
     public String toString(){
-        return Arrays.toString(arr);
+        StringBuilder sb = new StringBuilder();
+        for (T obj : arr) {
+            sb.append(obj.toString()).append("\n");
+        }
+        return sb.toString();
     }
 }

@@ -1,6 +1,6 @@
 package com.jakeberryman;
 
-public class SNList {
+public class SongSNList implements DataStructure<Song> {
     private static class SLNode {
         public Song song;
         public SLNode next;
@@ -18,7 +18,7 @@ public class SNList {
     private SLNode head;
     private int size;
 
-    public SNList() {
+    public SongSNList() {
         this.head = null;
         this.size = 0;
     }
