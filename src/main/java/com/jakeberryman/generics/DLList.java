@@ -28,16 +28,15 @@ public class DLList<T> {
     }
 
     public void addy(T s){
-        DLNode<T> newNode = new DLNode<T>(s);
+        DLNode<T> newNode = new DLNode<>(s);
 
         if (head == null) {
             head = newNode;
-            tail = newNode;
         } else {
             tail.next = newNode;
             newNode.previous = tail;
-            tail = newNode;
         }
+        tail = newNode;
         size++;
     }
 

@@ -1,7 +1,5 @@
 package com.jakeberryman.generics;
 
-import com.jakeberryman.Song;
-
 public class SNList<T> {
     private static class SLNode<T> {
         public T data;
@@ -26,7 +24,7 @@ public class SNList<T> {
     }
 
     public void addy(T s){
-        SLNode<T> newNode = new SLNode<T>(s);
+        SLNode<T> newNode = new SLNode<>(s);
 
         if (head == null) {
             head = newNode;

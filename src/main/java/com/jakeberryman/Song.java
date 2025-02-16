@@ -2,9 +2,9 @@ package com.jakeberryman;
 
 public class Song
 {
-    private String title;
-    private String artist;
-    private double length;
+    private final String title;
+    private final String artist;
+    private final double length;
 
     // Constructor to initialize the Song object
     public Song(String title, String artist, double length) {
