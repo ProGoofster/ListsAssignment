@@ -19,7 +19,8 @@ public class SNList {
     private int size;
 
     public SNList() {
-
+        this.head = null;
+        this.size = 0;
     }
 
     public void addy(Song s){
